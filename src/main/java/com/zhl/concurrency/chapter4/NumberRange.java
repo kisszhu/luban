@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * 委托失效.
  */
-public class Chapter_4_3_3 {
+public class NumberRange {
 
     // 不变性条件
     private final AtomicInteger lower = new AtomicInteger();

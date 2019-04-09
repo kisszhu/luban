@@ -5,7 +5,6 @@ package com.zhl.design.beverage;
  * 调料类
  */
 public abstract class CondimentDecorator extends Beverage{
-
     @Override
     public abstract  String getDescription();
 }

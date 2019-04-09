@@ -11,7 +11,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * 某个事件发生时，就会调用相应的监听器。然而，在鼠标事件监听器与键盘事件监听器之间不存在任何关联，
  * 二者是彼此独立的，因此可以将其线程安全性委托给这两个线程安全的监听器列表
  */
-public class Chapter_4_3_2 {
+public class VisualComponent {
 
     private final List<KeyListener> keyListeners = new CopyOnWriteArrayList<>();
     private final List<MouseListener> mouseListeners = new CopyOnWriteArrayList<>();

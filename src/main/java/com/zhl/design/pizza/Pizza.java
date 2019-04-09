@@ -9,7 +9,6 @@ import java.util.ArrayList;
  * 披萨抽象类
  */
 public abstract class Pizza {
-
     String name;
     Dough dough;
     Sauce sauce;

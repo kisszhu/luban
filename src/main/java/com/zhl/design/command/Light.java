@@ -1,15 +1,17 @@
 package com.zhl.design.command;
 
-/**
- * Created by zhuhailong-dc on 2018/6/11.
- */
 public class Light {
 
-    public void on() {
+    String name;
+    public Light(String name){
+        this.name=name;
+    }
 
+    public void on() {
+        System.out.println(name+" light is on");
     }
 
     public void off() {
-
+        System.out.println(name+" light is off");
     }
 }
