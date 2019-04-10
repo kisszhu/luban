@@ -12,6 +12,9 @@ public class TestHarness {
         final CountDownLatch endGate = new CountDownLatch(nThreads);
 
         for (int i = 0; i < nThreads; i++) {
+            /**
+             * Thread表示线程
+             */
             Thread t = new Thread() {
                 public void run() {
                     try {
@@ -40,6 +43,9 @@ public class TestHarness {
     }
 }
 
+/**
+ * Runnable表示任务
+ */
 class TestRunnable implements Runnable {
     @Override
     public void run() {
