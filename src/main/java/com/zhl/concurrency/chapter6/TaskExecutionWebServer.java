@@ -27,7 +27,7 @@ public class TaskExecutionWebServer {
             exec.execute(task);
         }
     }
-    
+
     public static void handleRequest(Socket socket) {
 
     }
