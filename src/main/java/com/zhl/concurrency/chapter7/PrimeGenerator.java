@@ -26,7 +26,7 @@ public class PrimeGenerator implements Runnable {
     }
 
     public synchronized List<BigInteger> get() {
-        // TODO 浅层复制，只复制了结构体
+        // 浅层复制，只复制了结构体
         return new ArrayList<>(primes);
     }
 
