@@ -5,7 +5,9 @@ import java.io.InputStream;
 import java.net.Socket;
 
 /**
- * 通过改写interrupt方法将非标准的取消操作封装在Thread中.
+ * ReaderThread管理了一个套接字连接，它采用同步方式从该套接字中读取数据，并将接收到的数据
+ * 传递给processBuffer。为了结束某个用户的连接或者关闭服务器，ReaderThread改写了interrupt方法，
+ * 使其既能处理标准的中断，也能关闭底层的套接字。
  */
 public class ReaderThread extends Thread {
     private final Socket socket;
@@ -20,7 +22,7 @@ public class ReaderThread extends Thread {
     public void interrupt() {
         try {
             socket.close();
-        } catch (IOException ingored) {
+        } catch (IOException ignored) {
 
         } finally {
             super.interrupt();
@@ -40,12 +42,11 @@ public class ReaderThread extends Thread {
                 }
             }
         } catch (IOException e) {
-            /* 允许线程退出 */
+            /** 允许线程退出 */
         }
     }
 
     public void processBuffer(byte[] buf, int count) {
-        
-    }
 
+    }
 }
