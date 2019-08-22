@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/io/io.iml" filepath="$PROJECT_DIR$/io/io.iml" />
       <module fileurl="file://$PROJECT_DIR$/iot-daq/iot-daq.iml" filepath="$PROJECT_DIR$/iot-daq/iot-daq.iml" />
       <module fileurl="file://$PROJECT_DIR$/luban.iml" filepath="$PROJECT_DIR$/luban.iml" />
       <module fileurl="file://$PROJECT_DIR$/micro-service/micro-service.iml" filepath="$PROJECT_DIR$/micro-service/micro-service.iml" />
