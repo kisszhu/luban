@@ -9,12 +9,14 @@
         <module name="iot-daq" />
         <module name="micro-service" />
         <module name="io" />
+        <module name="jvm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="io" target="1.8" />
       <module name="iot-daq" target="1.8" />
       <module name="java" target="1.8" />
+      <module name="jvm" target="1.8" />
       <module name="luban" target="1.8" />
       <module name="micro-service" target="1.8" />
     </bytecodeTargetLevel>
