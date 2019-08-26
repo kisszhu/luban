@@ -2,13 +2,6 @@ package com.zhl.concurrency.chapter6;
 
 //import sun.misc.Request;
 
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.RejectedExecutionException;
-
 /**
  * 支持关闭操作的Web服务器.
  */

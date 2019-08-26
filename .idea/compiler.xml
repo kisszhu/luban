@@ -10,9 +10,11 @@
         <module name="micro-service" />
         <module name="io" />
         <module name="jvm" />
+        <module name="concurrency" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="concurrency" target="1.8" />
       <module name="io" target="1.8" />
       <module name="iot-daq" target="1.8" />
       <module name="java" target="1.8" />
