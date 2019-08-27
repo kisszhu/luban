@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="iot-daq" />
-        <module name="micro-service" />
-        <module name="io" />
+        <module name="rpc" />
         <module name="jvm" />
         <module name="concurrency" />
+        <module name="micro-service" />
+        <module name="iot-daq" />
+        <module name="io" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
       <module name="jvm" target="1.8" />
       <module name="luban" target="1.8" />
       <module name="micro-service" target="1.8" />
+      <module name="rpc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
