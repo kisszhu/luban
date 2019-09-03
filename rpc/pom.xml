@@ -17,19 +17,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <!-- Camel BOM -->
-            <dependency>
-                <groupId>org.apache.camel</groupId>
-                <artifactId>camel-parent</artifactId>
-                <version>3.0.0-M4</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <dependencies>
         <dependency>
             <groupId>org.apache.camel</groupId>
@@ -57,13 +44,6 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- testing -->
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
         <!-- zookeeper -->
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
@@ -71,6 +51,17 @@
             <version>3.4.13</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.protostuff</groupId>
+            <artifactId>protostuff-runtime</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.objenesis</groupId>
+            <artifactId>objenesis</artifactId>
+            <version>3.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>
