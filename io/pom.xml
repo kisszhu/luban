@@ -17,52 +17,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <!-- Camel BOM -->
-            <dependency>
-                <groupId>org.apache.camel</groupId>
-                <artifactId>camel-parent</artifactId>
-                <version>3.0.0-M4</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <dependencies>
-
         <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-main</artifactId>
-        </dependency>
-
-        <!-- logging -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-
-        <!-- testing -->
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-test</artifactId>
-            <scope>test</scope>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.4.9</version>
         </dependency>
     </dependencies>
 
@@ -94,7 +53,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <mainClass>com.zhl.register.MainApp</mainClass>
+                    <mainClass>com.zhl.design.MainApp</mainClass>
                     <includePluginDependencies>false</includePluginDependencies>
                 </configuration>
             </plugin>

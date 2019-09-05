@@ -46,7 +46,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <mainClass>com.zhl.register.MainApp</mainClass>
+                    <mainClass>com.zhl.design.MainApp</mainClass>
                     <includePluginDependencies>false</includePluginDependencies>
                 </configuration>
             </plugin>
