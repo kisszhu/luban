@@ -17,6 +17,7 @@
         <module>jvm</module>
         <module>concurrency</module>
         <module>rpc</module>
+        <module>java8+</module>
     </modules>
 
     <properties>
