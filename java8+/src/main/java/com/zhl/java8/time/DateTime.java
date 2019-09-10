@@ -1,8 +1,6 @@
 package com.zhl.java8.time;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 /**
@@ -41,9 +39,16 @@ public class DateTime {
         // 2019-09-07T10:57:36.105
         System.out.println(localDateTime);
 
+        // DateTimeFormatter
         DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String now = LocalDateTime.now().format(format);
         // 2019-09-07 11:02:04
         System.out.println(now);
+
+        // Get Time Long 格林尼治时间+8
+        Long time = LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant().getEpochSecond();
+        Long time8 = LocalDateTime.now().toInstant(ZoneOffset.of("+8")).getEpochSecond();
+        System.out.println("The Get Time Long " + time);
+        System.out.println(time8);
     }
 }

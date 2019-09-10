@@ -1,0 +1,30 @@
+{
+  "name": "luban",
+  "version": "1.0.0",
+  "description": "luban",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kisszhu/codeX.git"
+  },
+  "keywords": [],
+  "author": "meilong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kisszhu/codeX/issues"
+  },
+  "homepage": "https://github.com/kisszhu/codeX#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-angular": "^8.1.0",
+    "husky": "^3.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
