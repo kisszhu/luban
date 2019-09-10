@@ -37,3 +37,7 @@ Thumbs.db
 
 # web sources
 src/main/webapp/view/
+
+## commitlint
+node_modules/
+package-lock.json
