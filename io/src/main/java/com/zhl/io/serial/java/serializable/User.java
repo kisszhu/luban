@@ -1,4 +1,4 @@
-package com.zhl.serial.demo;
+package com.zhl.io.serial.java.serializable;
 
 import java.io.Serializable;
 

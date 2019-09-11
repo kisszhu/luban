@@ -1,4 +1,4 @@
-package com.zhl.serial.externalizable;
+package com.zhl.io.serial.java.externalizable;
 
 import java.io.*;
 

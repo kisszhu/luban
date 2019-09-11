@@ -1,4 +1,4 @@
-package com.zhl.serial.framework.serializer;
+package com.zhl.io.serial.framework.serializer;
 
 import com.caucho.hessian.io.HessianInput;
 import com.caucho.hessian.io.HessianOutput;

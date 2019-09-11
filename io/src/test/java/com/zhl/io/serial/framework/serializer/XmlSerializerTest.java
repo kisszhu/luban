@@ -1,6 +1,6 @@
-package com.zhl.serial.framework.serializer;
+package com.zhl.io.serial.framework.serializer;
 
-import com.zhl.serial.demo.User;
+import com.zhl.io.serial.java.serializable.User;
 
 /**
  * @program codeX

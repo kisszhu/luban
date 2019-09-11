@@ -1,4 +1,4 @@
-package com.zhl.serial.framework.serializer;
+package com.zhl.io.serial.framework.serializer;
 
 import org.apache.thrift.TBase;
 import org.apache.thrift.TDeserializer;

@@ -1,4 +1,4 @@
-package com.zhl.serial.framework.serializer;
+package com.zhl.io.serial.framework.serializer;
 
 import com.dyuproject.protostuff.LinkedBuffer;
 import com.dyuproject.protostuff.ProtobufIOUtil;
