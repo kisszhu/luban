@@ -88,9 +88,10 @@ public class RpcServer implements ApplicationContextAware, InitializingBean {
             String host = serverAddress.split(":")[0];
             int port = Integer.valueOf(serverAddress.split(":")[1]);
             ChannelFuture future = server.bind(host, port).sync();
-
+            System.out.println("服务器启动成功:" + future.channel().localAddress());
             // TODO for rpc registry purpose
             rpcRegistry.createNode(serverAddress);
+            System.out.println("向zkServer注册服务地址信息");
             future.channel().closeFuture().sync();
         } catch (Exception ex) {
             ex.printStackTrace();
