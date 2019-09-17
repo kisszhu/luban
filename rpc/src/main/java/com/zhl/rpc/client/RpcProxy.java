@@ -45,4 +45,12 @@ public class RpcProxy {
         // 返回一个代理对象
         return instance;
     }
+
+    public RpcDiscover getRpcDiscover() {
+        return rpcDiscover;
+    }
+
+    public void setRpcDiscover(RpcDiscover rpcDiscover) {
+        this.rpcDiscover = rpcDiscover;
+    }
 }
