@@ -92,6 +92,7 @@ public class RpcServer implements ApplicationContextAware, InitializingBean {
             // TODO for rpc registry purpose
             rpcRegistry.createNode(serverAddress);
             System.out.println("向zkServer注册服务地址信息");
+            // TODO
             future.channel().closeFuture().sync();
         } catch (Exception ex) {
             ex.printStackTrace();

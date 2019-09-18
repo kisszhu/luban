@@ -1,5 +1,6 @@
 package com.zhl.rpc.client;
 
+import com.zhl.rpc.common.RpcDecoder;
 import com.zhl.rpc.common.RpcEncoder;
 import com.zhl.rpc.common.RpcRequest;
 import com.zhl.rpc.common.RpcResponse;
@@ -50,7 +51,7 @@ public class RpcClient extends SimpleChannelInboundHandler<RpcResponse> {
                     protected void initChannel(SocketChannel ch) throws Exception {
                         ch.pipeline()
                                 .addLast(new RpcEncoder(RpcRequest.class))
-                                .addLast(new RpcEncoder(RpcResponse.class))
+                                .addLast(new RpcDecoder(RpcResponse.class))
                                 // .....
                                 .addLast(RpcClient.this);
 
