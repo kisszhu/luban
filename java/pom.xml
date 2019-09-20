@@ -7,12 +7,11 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <name>jvm</name>
+    <name>java</name>
     <packaging>jar</packaging>
-    <artifactId>jvm</artifactId>
+    <artifactId>java</artifactId>
     <modelVersion>4.0.0</modelVersion>
 
     <dependencies>
     </dependencies>
-
 </project>
